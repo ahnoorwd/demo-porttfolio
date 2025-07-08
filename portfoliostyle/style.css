@@ -1,0 +1,146 @@
+/* General Font Setup */
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Body background and reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  max-width: 100%;
+}
+
+/* Header Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.mary {
+  font-size: 36px;
+  font-weight: 800;
+  color: #2f2f2f;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+nav li a:hover {
+  color: #fd6e0a;
+}
+
+/* Button Styles */
+button {
+  background-color: #fd6e0a;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e55d00;
+}
+
+.hireme {
+  padding: 10px 18px;
+  font-size: 18px;
+}
+
+/* Banner Section */
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 100px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.banner-contant {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #fff8f4, #ffe8db);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.banner-contant h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+.banner-contant p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.banner-img img {
+  width: 480px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+  }
+
+  .banner-img img {
+    width: 100%;
+  }
+
+  .banner-contant {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .banner-contant h3 {
+    font-size: 28px;
+  }
+}
